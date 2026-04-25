@@ -1,6 +1,6 @@
 # Ridesk Client
 
-A modern React frontend application for the Ridesk watersports school management platform, built with TypeScript, Vite, and Tailwind CSS.
+A modern React frontend application for the Ridesk watersports school management platform, built with TypeScript, Vite, and Tailwind CSS
 
 ## 🚀 Features
 
