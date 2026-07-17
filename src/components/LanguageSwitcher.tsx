@@ -62,7 +62,7 @@ const handleLanguageChange = (lang: "en" | "it" | "pt-BR") => {
             {languages.map((lang) => (
               <button
                 key={lang.code}
-                onClick={() => handleLanguageChange(lang.code as "en" | "it")}
+                onClick={() => handleLanguageChange(lang.code as "en" | "it" | "pt-BR")}
                 className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center space-x-3 ${
                   language === lang.code
                     ? "bg-primary-50 text-primary-600"
