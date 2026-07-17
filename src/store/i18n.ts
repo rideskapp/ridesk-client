@@ -2,8 +2,8 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
 interface I18nState {
-  language: "en" | "it";
-  setLanguage: (language: "en" | "it") => void;
+  language: "en" | "it" | "pt-BR";
+  setLanguage: (language: "en" | "it" | "pt-BR") => void;
 }
 
 export const useI18nStore = create<I18nState>()(
