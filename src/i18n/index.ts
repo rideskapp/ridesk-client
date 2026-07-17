@@ -6,7 +6,7 @@ import en from "./locales/en.json";
 import it from "./locales/it.json";
 import ptBR from "./locales/pt-BR.json";
 
-onst resources = {
+const resources = {
   en: {
     translation: en,
   },
