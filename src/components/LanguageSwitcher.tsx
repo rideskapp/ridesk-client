@@ -10,16 +10,17 @@ const LanguageSwitcher: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const languages = [
-    { code: "en", name: "English", flag: "🇺🇸" },
-    { code: "it", name: "Italiano", flag: "🇮🇹" },
-  ];
+ const languages = [
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "it", name: "Italiano", flag: "🇮🇹" },
+  { code: "pt-BR", name: "Português (Brasil)", flag: "🇧🇷" },
+];
 
   const currentLanguage =
     languages.find((lang) => lang.code === language) || languages[0];
 
-  const handleLanguageChange = (lang: "en" | "it") => {
-    setLanguage(lang);
+const handleLanguageChange = (lang: "en" | "it" | "pt-BR") => {
+  setLanguage(lang);
     i18n.changeLanguage(lang);
     setIsOpen(false);
   };
