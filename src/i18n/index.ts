@@ -4,13 +4,17 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import en from "./locales/en.json";
 import it from "./locales/it.json";
+import ptBR from "./locales/pt-BR.json";
 
-const resources = {
+onst resources = {
   en: {
     translation: en,
   },
   it: {
     translation: it,
+  },
+  "pt-BR": {
+    translation: ptBR,
   },
 };
 
